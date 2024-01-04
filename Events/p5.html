@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt {
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4 {
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>onmousewheel() - deprecated and onscroll() </h3>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quia sed vitae magnam eos sequi! Voluptate cumque tenetur optio facere non nobis earum quam, totam, deleniti ex incidunt tempore modi!
+        Dolores explicabo obcaecati non cumque, qui incidunt id illo, ut, labore voluptatibus aut dolor nesciunt ratione cum. Dolorem error ut facere at quas itaque perferendis. Itaque facere temporibus et repellat.
+        Asperiores earum harum maxime laborum recusandae maiores sed natus a laudantium quos, aut voluptas ratione esse nisi facilis eligendi, placeat exercitationem rem pariatur autem cum eius animi? Unde, corrupti voluptatibus.
+        Provident repellat magni veritatis tempore iusto ex ullam perspiciatis libero, consectetur voluptatum et eaque quidem facere, alias, laudantium cupiditate voluptatibus modi quibusdam? Alias molestias corporis placeat tempora, nesciunt quibusdam laudantium.
+        Dolore, sit nisi. Neque fuga corporis impedit obcaecati eius nam ducimus animi alias sapiente! Excepturi veniam earum ipsam culpa reprehenderit quo mollitia! Tempore non repudiandae voluptas beatae ipsum consectetur quibusdam.
+        Minus obcaecati unde accusantium error iste soluta voluptas recusandae itaque qui, totam a! Dolorem officiis quasi reiciendis quaerat, eum numquam ad nam. Autem, exercitationem maxime. Incidunt consectetur adipisci natus quo.
+        Repellat vitae libero recusandae, fugiat error sint fuga ipsum ipsam in voluptatem deleniti quibusdam velit veritatis laborum exercitationem, incidunt consequuntur? Tenetur iste asperiores rem fugiat explicabo quam modi natus tempora.
+        Temporibus architecto laudantium laborum cumque aliquam iusto? Modi, officia doloremque doloribus recusandae quia quasi quam, ad suscipit cumque expedita quas dicta vero velit sunt mollitia ea. Dicta sequi similique laboriosam.
+        Aliquam, reiciendis. Corrupti ipsum delectus obcaecati repudiandae corporis deserunt nisi minima magni maxime aspernatur libero adipisci, tempore blanditiis architecto? Ratione voluptatibus ipsam facilis est inventore minima expedita illo vel laudantium.
+        Ratione eveniet mollitia, quaerat nihil labore sunt nobis. Mollitia excepturi sed delectus blanditiis quas aliquam corrupti ipsum quis? Voluptatibus dolor laudantium mollitia aut error asperiores eius facilis sapiente velit nam.
+        Nulla, obcaecati repudiandae accusamus iure magnam, nisi quam doloremque numquam ducimus laboriosam quae fugit expedita soluta repellendus natus. Et itaque neque non praesentium cupiditate omnis rerum vero rem dolor impedit.
+        Rerum, voluptates temporibus! Mollitia incidunt quasi omnis tenetur explicabo distinctio ipsum a odio nesciunt? Quod porro, at rerum vero debitis excepturi, ex quibusdam veritatis nobis reprehenderit voluptatibus eligendi, esse odit?
+        Iure fugit eius neque minima quisquam similique debitis recusandae nihil voluptatem iste beatae minus laboriosam, maxime temporibus voluptas rem saepe non consequuntur ipsam inventore, nemo molestiae numquam accusamus enim! Tenetur!
+        Repellendus totam ex hic est ipsam dolorem dolorum maiores! Odit enim ea, minima iure dolore, eligendi, officiis quasi nam iusto repellat at. Sapiente quod delectus laboriosam odit commodi voluptates cumque.
+        Suscipit, quis voluptatibus, quibusdam corporis asperiores unde expedita aliquam commodi praesentium recusandae ratione? Labore autem suscipit asperiores illo possimus quis sit fugit, corporis minima saepe nisi voluptas impedit alias itaque.</p>
+    </div>
+
+    <script>
+        function wheelHandler() {
+            var pos = document.getElementById("txt");
+            document.getElementById("output").innerText = pos.scrollTop + "px";
+        }
+    </script>
+</body>
+</html>

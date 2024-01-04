@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>match() and matchAll()</h1>
+
+    <script>
+        var msg = "Javascript is front end programming script";
+        var exp = /programming/;
+        var res = msg.match(exp);
+        console.log(`output=`,res);
+
+        var msg1 = "javascript is web scripting language, and also can be used as a server Script too";
+
+        var regex = /script/g;  /* /regular exp/global */
+        var out = msg.matchAll(regex);
+        console.log(`output= `,out);
+        for(item of out){
+            console.log(`item=`,item);
+        }
+    </script>
+</body>
+</html>
