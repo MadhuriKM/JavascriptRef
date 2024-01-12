@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Object using constructor parameter</h3>
+    <button onclick="handler()">Back</button>
+    <script>
+        let x = new Object({ title: "JavaScript",fee: 12332,duration: "2 month"});
+
+            console.log(x); 
+
+            document.write(`<h3> ${ x } </h3>`); // object cannot destructed on DOM
+            document.write(`<h3> ${ x.title } </h3>`);
+            document.write(`<h3> ${ x.fee } </h3>`);
+            document.write(`<h3> ${ x.duration } </h3>`);
+
+            function handler() {
+                history.back();
+            }
+    </script>
+</body>
+</html>
