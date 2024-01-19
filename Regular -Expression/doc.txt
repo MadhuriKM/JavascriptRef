@@ -1,0 +1,29 @@
+Rules of regualar expressions
+/words /^condition$/ 
+
+^ -> defines the beginning of the pattern
+$ -> defines the ending of the pattern
+
+[] -> character set [6-9] [e-s]
+
+() -> capturing group the group of multiple characters
+
+[abcdef] -> matches any single occurrence of any of the characters a,b,c,d,e,f
+
+[a-z] -> matches any single lowercase letter
+
+[A-Z] -> matches any single uppercase letter
+
+[a-zA-Z] -> matches any single letter from a-z ignoring the characters
+
+. -> matches any character except line break /n
+
+? -> matches 0 and 1 occurrence of the preceding character, set or group
+
+* -> matches 0 or more occurrence of the preceding character, set or group
+
++ -> matches 1 or more occurrence of the preceding character, set or group
+
+{n} -> matches exactly n occurrence of the preceding character, set or group
+
+{n,m} -> matches exactly n or m occurrence of the preceding character, set or group

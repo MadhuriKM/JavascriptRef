@@ -6,27 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Object</h3>
-    <script>
+    <h1>History</h1>
 
-        var x = [];
-        var y = {};
-    </script>
-    <script>
-        var user ={
-            //key:value, => property
-            name: "Raj",
-            email: "raj@gmail.com",
-            age: 33,
-            isView: true,
-            hobbies: ["driving", "riding"]
-        };
-        
-        console.log('user =', user);
+    <button onclick="handler()">Go Back</button>
 
-        document.write(`<h3> name = ${ user } </h3>`); // can't destructure an object =[object Object]
-        document.write(`<h3> name = ${ user.name } </h3>`); // object.key
-        document.write(`<h3> name = ${ user['email'] } </h3>`); //object['key']
+    <script>
+        /* go(position), back(), forward() */
+
+        function handler() {
+            //history.back();
+            history.go(-2); /*  +2 => forward hostory, -2 back history */
+        }
     </script>
 </body>
 </html>

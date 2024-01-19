@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exec()</h1>
+
+    <p>it returns an array of captures. or null of there is no match</p>
+
+    <script>
+        var re = /a/g;
+       // var result = re.exec('barbAtbaz');
+       var result;
+
+        console.log('input is =', 'barbAtbaz');
+       // console.log('result =', result);
+        while((result= re.exec('barbAtbaz') !== null)) {
+            //console.log('re =', re);
+            console.log(`found: '${result[0]}', next exec starts at '${re.lastIndex}'`);
+        }
+    </script>
+</body>
+</html>

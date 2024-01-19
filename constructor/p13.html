@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Geolocation</h1>
+    <script>
+        //const options = {
+         //   enableHighAccuracy: true,
+          //  timeout: 5000,
+         //   maximumAge: 0
+        //};
+       // success cancelIdleCallback
+         //   function success(pos) {
+         //       const crd = pos.coords;
+
+           //     console.log('current position is = ' , crd);
+            //}
+
+           // error cancelIdleCallback
+           // function error(err) {
+           //     console.error(new Error(`${err.code} ${err.message}`));
+            //}
+           // function getMyLocation() {
+           //     navigator.geolocation.getCurrentPosition(success,error,options);
+           // }
+
+            function getMyLocation() {
+                navigator.geolocation.getCurrentPosition(function(position){
+                    console.log(`position = `, position.coords);
+                }, function(err){
+                    console.log(`${err.code} & ${err.message}`);
+                },{
+                    enableHighAccuracy: true,
+                    timeout: 5000,
+                    maximumAge: 0
+                });
+            }
+
+            setInterval(getMyLocation,3000);
+    </script>
+</body>
+</html>
