@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Sum {
+            constructor(x,y) {
+                this.a = x;
+                this.b = y;
+            }
+
+            calculate() {
+                return this.a + this.b;
+            }
+        }
+
+        // instance is persmission to access the properties of class and constructor
+        // type name = new Class(params) -> syntax
+        let s = new Sum(12,44);
+        let s1 = new Sum(22,43);
+
+        console.log('s =', s);
+        console.log('s1 = ', s1);
+
+        document.write(`<h3> Sum = `)
+    </script>
+</body>
+</html>

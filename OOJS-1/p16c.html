@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Accesor properties (get and set) </h1>
+    <p>Consider we have 2 function inside an object, one to set the value and another to get the value from it.</p>
+
+    <script>
+        var user = {
+            name: 'john',
+            surname: 'mathew',
+            email: 'john@gmail.com'
+        };
+
+        Object.defineProperty(user, 'fullName', {
+            get: function () {
+                return this.name + " " + this.surname;   //`${this.name} ${this.surname}`
+            },
+            set: function(value) {
+                [this.name, this.surname] = value.split(" ");   // Raj kumar
+            }
+        });
+
+        console.log('fullName =', user.fullName);  // john mathew
+          //console.log('user =', user);
+
+        user.surname = "david";
+
+        console.log('fullname =', user.fullName);  // john david
+
+        user.name = "Andrew";
+
+        console.log('fullname =' , user.fullName);   // Andrew david
+
+    </script>
+</body>
+</html>
