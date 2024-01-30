@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="menu-container">
+            <div class="logo">CRUD</div>
+            <ul class="right-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="create.html">Create</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="title">
+            <h1>Create</h1>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="card">
+            <form autocomplete="off" method="post" id="userForm">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-input" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Mobile</label>
+                    <input type="number" name="mobile" id="mobile" class="form-input" required>
+                </div>
+                <div class="form-item">
+                    <input type="submit" value="Create User" class="btn">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/create.js"></script>
+</body>
+</html>
